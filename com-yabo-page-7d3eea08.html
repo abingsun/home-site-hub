@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>yabo.com · 稳定访问入口说明</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            background-color: #faf7f2;
+            font-family: 'Georgia', 'Noto Serif SC', 'Times New Roman', serif;
+            color: #2d2a24;
+            line-height: 1.7;
+            padding: 2rem 1rem;
+        }
+        .page {
+            max-width: 820px;
+            margin: 0 auto;
+            background: #fffcf8;
+            border-radius: 28px;
+            box-shadow: 0 8px 30px rgba(0,0,0,0.04);
+            padding: 2.5rem 2rem 3rem;
+        }
+        @media (max-width: 550px) {
+            body { padding: 1rem 0.5rem; }
+            .page { padding: 1.8rem 1.2rem 2.2rem; border-radius: 18px; }
+        }
+
+        /* hero */
+        .hero {
+            text-align: center;
+            padding: 1rem 0 2.2rem 0;
+            border-bottom: 1px solid #ebe5db;
+        }
+        .hero h1 {
+            font-size: 2.4rem;
+            font-weight: 400;
+            letter-spacing: 2px;
+            color: #3b352c;
+            margin-bottom: 0.4rem;
+        }
+        .hero .sub {
+            font-size: 1rem;
+            color: #7b7265;
+            font-style: italic;
+            margin-top: 0.2rem;
+        }
+        .hero .tagline {
+            display: inline-block;
+            background: #f0eae0;
+            padding: 0.2rem 1.2rem;
+            border-radius: 40px;
+            font-size: 0.9rem;
+            color: #5f5543;
+            margin-top: 1rem;
+            letter-spacing: 0.5px;
+        }
+
+        /* section common */
+        section {
+            margin: 2.2rem 0;
+        }
+        h2 {
+            font-size: 1.5rem;
+            font-weight: 500;
+            color: #3b352c;
+            border-left: 4px solid #c6b7a3;
+            padding-left: 1rem;
+            margin-bottom: 1.2rem;
+        }
+        p {
+            margin-bottom: 1.1rem;
+            font-size: 1.02rem;
+        }
+        .highlight-box {
+            background: #f3eee7;
+            padding: 1.2rem 1.6rem;
+            border-radius: 20px;
+            margin: 1.6rem 0;
+            border-left: 4px solid #b8a790;
+            font-style: normal;
+        }
+        .highlight-box p:last-child {
+            margin-bottom: 0;
+        }
+
+        /* advantage grid */
+        .adv-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 1.2rem;
+            margin: 1.8rem 0;
+        }
+        @media (max-width: 500px) {
+            .adv-grid { grid-template-columns: 1fr; }
+        }
+        .adv-card {
+            background: #fcf8f3;
+            padding: 1.2rem 1rem 1rem 1.2rem;
+            border-radius: 18px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.02);
+            border: 1px solid #ede7df;
+        }
+        .adv-card h3 {
+            font-size: 1.1rem;
+            font-weight: 500;
+            color: #4c4237;
+            margin-bottom: 0.3rem;
+        }
+        .adv-card p {
+            font-size: 0.94rem;
+            color: #5e5549;
+            margin-bottom: 0;
+        }
+
+        /* faq summary */
+        .faq-item {
+            padding: 0.8rem 0;
+            border-bottom: 1px dashed #e3dbd0;
+        }
+        .faq-item:last-child {
+            border-bottom: none;
+        }
+        .faq-q {
+            font-weight: 500;
+            color: #3f382e;
+            margin-bottom: 0.2rem;
+        }
+        .faq-a {
+            color: #5f564a;
+            font-size: 0.96rem;
+            padding-left: 0.5rem;
+        }
+
+        .foot-links {
+            margin-top: 2.8rem;
+            padding-top: 1.8rem;
+            border-top: 1px solid #e5ddd2;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 1.2rem 2rem;
+            font-size: 0.92rem;
+        }
+        .foot-links a {
+            color: #6f6558;
+            text-decoration: none;
+            border-bottom: 1px dotted #c5b9a9;
+        }
+        .foot-links a:hover {
+            color: #3f372b;
+            border-bottom-style: solid;
+        }
+
+        .inline-link {
+            color: #6d604e;
+            text-decoration: none;
+            border-bottom: 1px solid #cbbcad;
+            font-weight: 400;
+        }
+        .inline-link:hover {
+            color: #2f2a22;
+            border-color: #7a6b58;
+        }
+
+        .disclaimer {
+            font-size: 0.82rem;
+            color: #8e8478;
+            text-align: center;
+            margin-top: 2rem;
+            padding: 0.5rem;
+            border-top: 1px solid #ede7df;
+            padding-top: 1.5rem;
+        }
+    </style>
+</head>
+<body>
+<div class="page">
+
+    <!-- hero -->
+    <div class="hero">
+        <h1>yabo.com</h1>
+        <div class="sub">页面入口 · 稳定说明</div>
+        <div class="tagline">日常使用中保持清晰的访问路径</div>
+    </div>
+
+    <!-- 开篇介绍 -->
+    <section>
+        <p>无论习惯用书签、搜索栏还是直接输入地址，一个简单可靠的入口总能省去许多不必要的周转。最近不少朋友在问，有没有一个相对固定的方式能够快速到达 <a href="https://com-yabo.com" class="inline-link">yabo.com</a> 的页面内容——这里整理了一些基本信息和常见要点，方便你按自己的节奏使用。</p>
+    </section>
+
+    <!-- 优势区 -->
+    <section>
+        <h2>日常使用中留意这几点</h2>
+        <div class="adv-grid">
+            <div class="adv-card">
+                <h3>直接键入</h3>
+                <p>在浏览器地址栏输入完整域名 https://com-yabo.com 即可，无需额外跳转或中转页面。</p>
+            </div>
+            <div class="adv-card">
+                <h3>保存书签</h3>
+                <p>将当前页面添加至浏览器书签栏，下次只需一次点击即可回到同一位置。</p>
+            </div>
+            <div class="adv-card">
+                <h3>稳定为主</h3>
+                <p>保持网络连接正常，大多数时候都能顺畅打开；如遇临时波动稍后重试即可。</p>
+            </div>
+            <div class="adv-card">
+                <h3>环境差异</h3>
+                <p>不同设备或浏览器可能呈现稍有不同，但核心内容和功能保持一致。</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- 说明区 + 提示框 -->
+    <section>
+        <h2>关于入口的一些补充</h2>
+        <p>很多人第一次接触到这个站点是通过朋友推荐或搜索时偶然发现。如果你习惯用手机浏览，也可以直接把 <a href="https://com-yabo.com" class="inline-link">yabo.com</a> 添加到主屏幕，生成一个类似应用图标的快捷方式。无论是电脑还是移动端，体验都偏向清爽、直接。</p>
+
+        <div class="highlight-box">
+            <p><strong>一个小提醒：</strong> 如果你发现页面加载偏慢或者出现空白，可以先检查一下本地网络，或者换个时段再试。有时候运营商或浏览器缓存也会造成暂时的影响，清理缓存或使用隐私模式往往能解决。</p>
+        </div>
+
+        <p>另外，建议不要通过来历不明的第三方链接或弹窗去访问，避免误入仿冒或广告过多的页面。认准 <strong>com-yabo.com</strong> 这个地址即可，其他变体或后缀很可能不是你想找的地方。</p>
+    </section>
+
+    <!-- FAQ 摘要 -->
+    <section>
+        <h2>常见疑问摘要</h2>
+        <div class="faq-item">
+            <div class="faq-q">· 这个入口一直有效吗？</div>
+            <div class="faq-a">是的，只要域名解析正常，通过 https://com-yabo.com 就能访问。如果将来有调整，通常也会保留旧地址的跳转。</div>
+        </div>
+        <div class="faq-item">
+            <div class="faq-q">· 为什么有时候打不开？</div>
+            <div class="faq-a">大概率是本地网络波动或临时维护，稍等片刻再刷新一般就能恢复。长期无法访问时可以试着更换 DNS 或联系你的网络服务商。</div>
+        </div>
+        <div class="faq-item">
+            <div class="faq-q">· 需要注册或登录吗？</div>
+            <div class="faq-a">这取决于具体页面功能。部分内容可以直接浏览，某些区域可能需要简单的身份验证，以实际情况为准。</div>
+        </div>
+        <div class="faq-item">
+            <div class="faq-q">· 手机和电脑访问有区别吗？</div>
+            <div class="faq-a">界面会自适应屏幕大小，功能基本一致。个别交互可能在手机上略有调整，不影响核心使用。</div>
+        </div>
+    </section>
+
+    <!-- 底部链接 -->
+    <div class="foot-links">
+        <a href="https://com-yabo.com">yabo.com</a>
+        <a href="#">常见问题</a>
+        <a href="#">隐私说明</a>
+        <a href="#">联系方式</a>
+    </div>
+    <div class="disclaimer">
+        本页为信息说明页，所提及的入口地址请以实际访问为准。内容仅供一般参考。
+    </div>
+
+</div>
+</body>
+</html>
